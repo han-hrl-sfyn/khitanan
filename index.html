@@ -1,0 +1,413 @@
+```html
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Khitanan Fahri Surahman</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+
+html{
+    scroll-behavior:smooth;
+    -webkit-text-size-adjust:100%;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+}
+
+.heading-font{
+    font-family:'Playfair Display',serif;
+}
+
+.hero-bg{
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://picsum.photos/id/1015/2000/1200');
+    background-size:cover;
+    background-position:center;
+}
+
+.ornament{
+    width:120px;
+    height:2px;
+    background:linear-gradient(to right,transparent,#d4af37,transparent);
+}
+
+.gallery img{
+    transition:.5s;
+}
+
+.gallery img:hover{
+    transform:scale(1.08);
+}
+</style>
+</head>
+
+<body class="bg-[#f8f1e9] text-gray-800">
+
+    <!-- Background Music -->
+<audio id="bgMusic" autoplay loop>
+    <source src="sunat1.mp3" type="audio/mpeg">
+</audio>
+
+<!-- Tombol Musik -->
+<button id="musicBtn"
+    class="fixed bottom-5 right-5 z-50 bg-amber-600 text-white w-14 h-14 rounded-full shadow-lg">
+    <i class="fa-solid fa-music"></i>
+</button>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md shadow-sm z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex items-center justify-between">
+
+        <div class="flex items-center gap-3">
+            <i class="fa-solid fa-mosque text-amber-600 text-2xl"></i>
+            <span class="heading-font text-xl font-semibold">
+                
+            </span>
+        </div>
+
+        <div class="hidden md:flex absolute left-1/2 -translate-x-1/2 gap-8 font-medium">
+            <a href="#home" class="hover:text-amber-600">Beranda</a>
+            <a href="#acara" class="hover:text-amber-600">Acara</a>
+            <a href="#galeri" class="hover:text-amber-600">Galeri</a>
+            <a href="#ucapan" class="hover:text-amber-600">Ucapan</a>
+        </div>
+
+        <button id="menuBtn" class="md:hidden text-xl">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </div>
+
+    <div id="mobileMenu" class="hidden md:hidden border-t bg-white">
+        <a href="#home" class="block px-5 py-3">Beranda</a>
+        <a href="#acara" class="block px-5 py-3">Acara</a>
+        <a href="#galeri" class="block px-5 py-3">Galeri</a>
+        <a href="#ucapan" class="block px-5 py-3">Ucapan</a>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section id="home" class="hero-bg min-h-screen flex items-center justify-center text-white text-center px-4 pt-24">
+
+    <div class="max-w-3xl">
+
+        <div class="inline-block bg-white/20 backdrop-blur-md px-5 py-2 rounded-full text-xs sm:text-sm tracking-widest mb-6">
+        بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْمِ
+        </div>
+
+        <h1 class="heading-font text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-4">
+            Farhan Naufal AL Ghifari
+        </h1>
+
+        <p class="text-base sm:text-lg md:text-xl opacity-90 mb-8">
+            Anak ke Dua dari pasangan
+        </p>
+        <p class="text-base sm:text-lg md:text-xl opacity-90 mb-8">
+            Bpk Hendrik [ BPD DESA CISEENG ] & Ibu Puji Rohani,S.Pd [ Guru SDIT ANDALUSIA ]
+        </p>
+
+        <div class="w-44 h-44 sm:w-56 sm:h-56 md:w-64 md:h-64 mx-auto rounded-3xl overflow-hidden border-4 border-white/30 shadow-2xl mb-8">
+            <img src="photo1.jpeg"
+                 class="w-full h-full object-cover">
+        </div>
+
+        <div class="mb-8">
+            <p class="text-amber-300 uppercase tracking-[4px] text-sm">
+                Acara Tasyakuran Khitan
+            </p>
+            <h2 class="text-xl sm:text-2xl font-semibold">
+                Sabtu, 13 Juni 2026
+            </h2>
+        </div>
+
+        <p class="italic text-sm sm:text-base max-w-xl mx-auto">
+            "Maka Tatkala anak itu sampai [pada umur sanggup] berusaha bersama-sama Ibrahim,Ibrahim berkata;'Hai anakku sesungguhnya aku melihat dalam mimpi bahwa aku menyembelihmu.Maka fikirkanlah apa pendapatmu
+            
+            QS,As-Shaffat; 102'
+        </p>
+
+        <a href="#acara"
+           class="inline-block mt-10 bg-white text-gray-900 px-8 py-4 rounded-full font-medium hover:bg-amber-100 transition">
+            Buka Undangan
+        </a>
+
+    </div>
+
+</section>
+
+<!-- ACARA -->
+<section id="acara" class="py-20 bg-white">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-14">
+            <div class="ornament mx-auto mb-4"></div>
+            <h2 class="heading-font text-4xl font-bold">
+                Pelaksanaan Acara
+            </h2>
+            <p class="text-gray-500 mt-2">
+                Dengan penuh rasa syukur dan kebahagiaan
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+            <div class="bg-[#f8f1e9] p-8 rounded-3xl text-center">
+                <i class="fa-solid fa-calendar text-4xl text-amber-600 mb-5"></i>
+                <h3 class="font-semibold text-xl mb-2">Tanggal</h3>
+                <p class="heading-font text-3xl">
+                    Sabtu,13 Juni 2026
+                </p>
+                <p class="text-gray-500 mt-2">
+                     Pukul: 08:00 - 23:55
+                </p>
+            </div>
+
+            
+            <div class="bg-[#f8f1e9] p-8 rounded-3xl text-center">
+                <i class="fa-solid fa-location-dot text-4xl text-amber-600 mb-5"></i>
+                <h3 class="font-semibold text-xl mb-2">Lokasi</h3>
+
+                <p class="font-medium">
+                    Rumah Kediaman
+                </p>
+
+                <p class="text-gray-500 mt-3 text-sm">
+                    Kp.Cibogo Sabrang Rt.03/04<br>
+                    Desa Ciseeng, Kec.Ciseeng-Bogor
+                </p>
+
+                <a href="https://maps.app.goo.gl/X9WRm3RLvA82zqyU9"
+   target="_blank"
+   class="inline-block mt-4 bg-amber-600 text-white px-5 py-2 rounded-full text-sm hover:bg-amber-700 transition">
+    <i class="fa-solid fa-location-dot mr-2"></i>
+    Lihat Maps
+</a>
+
+    </div>
+
+</section>
+
+<!-- GALERI -->
+<section id="galeri" class="py-20 bg-[#f8f1e9]">
+
+    <div class="max-w-6xl mx-auto px-4">
+
+        <div class="text-center mb-12">
+            <h2 class="heading-font text-4xl font-bold">
+                Galeri Farhan
+            </h2>
+        </div>
+
+        <div class="gallery grid grid-cols-2 md:grid-cols-3 gap-4">
+
+            <div class="overflow-hidden rounded-3xl">
+                <img src="photo2.jpeg"
+                     class="w-full aspect-square object-cover">
+            </div>
+
+            <div class="overflow-hidden rounded-3xl">
+                <img src="photo3.jpeg"
+                     class="w-full aspect-square object-cover">
+            </div>
+
+            <div class="overflow-hidden rounded-3xl">
+                <img src="photo4.jpeg"
+                     class="w-full aspect-square object-cover">
+            </div>
+             <div class="overflow-hidden rounded-3xl">
+                <img src="photo5.jpeg"
+                     class="w-full aspect-square object-cover">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- UCAPAN -->
+<section id="ucapan" class="py-20 bg-white">
+
+    <div class="max-w-3xl mx-auto px-4 text-center">
+
+        <h2 class="heading-font text-4xl font-bold mb-4">
+            Ucapan & Doa
+        </h2>
+
+        <p class="text-gray-600 mb-8">
+            Kirim ucapan dan doa terbaik Anda melalui WhatsApp
+        </p>
+
+        <a href="https://wa.me/6281290438585?text=Assalamu'alaikum,%20selamat%20atas%20khitanan%20Ananda%20Fahri%20Surahman.%20Semoga%20menjadi%20anak%20yang%20sholeh%20dan%20berbakti."
+           target="_blank"
+           class="inline-flex items-center gap-3 bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-medium">
+
+            <i class="fab fa-whatsapp text-2xl"></i>
+            Kirim Ucapan via WhatsApp
+
+        </a>
+
+    </div>
+
+
+    <!-- AMplop Digital -->
+<section class="py-20 bg-[#f8f1e9]">
+
+    <div class="max-w-4xl mx-auto px-4 text-center">
+
+        <h2 class="heading-font text-4xl font-bold mb-4">
+            Amplop Digital
+        </h2>
+
+        <p class="text-gray-600 mb-10">
+            Doa restu Anda merupakan karunia yang sangat berarti bagi kami.
+            Jika ingin berbagi tanda kasih, dapat melalui rekening berikut:
+        </p>
+
+       <div class="flex flex-col md:flex-row justify-center gap-10">
+
+    <!-- Bank BCA -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 max-w-md w-full">
+        <i class="fa-solid fa-building-columns text-5xl text-amber-600 mb-4"></i>
+
+        <h3 class="text-xl font-semibold">
+            Bank BCA
+        </h3>
+
+        <p class="text-3xl font-bold tracking-wider my-4">
+            8330168936
+        </p>
+
+        <p class="text-gray-600">
+            a/n Hendrik
+        </p>
+
+        <button
+            onclick="copyRek('8330168936')"
+            class="mt-6 bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700">
+            Salin Nomor Rekening
+        </button>
+    </div>
+
+    <!-- Bank BSI -->
+    <div class="bg-white rounded-3xl shadow-lg p-8 max-w-md w-full">
+        <i class="fa-solid fa-building-columns text-5xl text-amber-600 mb-4"></i>
+
+        <h3 class="text-xl font-semibold">
+            Bank BSI
+        </h3>
+
+        <p class="text-3xl font-bold tracking-wider my-4">
+            7253407373
+        </p>
+
+        <p class="text-gray-600">
+            a/n Puji Rohani
+        </p>
+
+        <button
+            onclick="copyRek('7253407373')"
+            class="mt-6 bg-amber-600 text-white px-6 py-3 rounded-full hover:bg-amber-700">
+            Salin Nomor Rekening
+        </button>
+    </div>
+
+</div>
+
+
+<div class="mt-20 px-8 md:px-12">
+
+    <h2 class="heading-font text-4xl font-bold mb-8 text-gray-800">
+        Terima Kasih
+    </h2>
+
+    <p class="text-gray-600 text-lg leading-relaxed max-w-3xl mx-auto mb-10">
+        Merupakan suatu kehormatan dan kebahagiaan bagi kami sekeluarga,
+        apabila Bapak/Ibu/Saudara/i berkenan hadir dan memberikan doa restu
+        bagi putra kami.
+    </p>
+
+    <div class="w-24 h-1 bg-amber-600 mx-auto mb-10 rounded-full"></div>
+
+    <p class="text-gray-700 text-lg mb-3">
+        Kami yang Mengundang,
+    </p>
+
+    <h3 class="text-2xl font-semibold text-gray-800 mb-3">
+        Bpk. Hendrik & Ibu Puji Rohani, S.Pd
+    </h3>
+
+    <p class="text-gray-600">
+        Beserta Segenap Keluarga Besar
+    </p>
+
+</div>
+
+
+</section>
+
+
+<script>
+const menuBtn = document.getElementById("menuBtn");
+const mobileMenu = document.getElementById("mobileMenu");
+
+menuBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("hidden");
+});
+
+function kirimUcapan(){
+    const text = document.getElementById("ucapanText").value;
+
+    if(text.trim()===""){
+        alert("Silakan tulis ucapan terlebih dahulu.");
+        return;
+    }
+
+    alert("Terima kasih atas doa dan ucapannya 🤲");
+    document.getElementById("ucapanText").value="";
+}
+
+document.querySelectorAll('a[href^="#"]').forEach(anchor=>{
+    anchor.addEventListener('click',function(e){
+        e.preventDefault();
+
+        const target=document.querySelector(this.getAttribute('href'));
+
+        if(target){
+            target.scrollIntoView({
+                behavior:'smooth'
+            });
+        }
+
+        mobileMenu.classList.add("hidden");
+    });
+});
+
+function copyRek(nomor) {
+    navigator.clipboard.writeText(nomor);
+    alert("Nomor rekening berhasil disalin");
+}
+
+const bgMusic = document.getElementById("bgMusic");
+const musicBtn = document.getElementById("musicBtn");
+
+let isPlaying = false;
+
+musicBtn.addEventListener("click", () => {
+    if (!isPlaying) {
+        bgMusic.play();
+        musicBtn.innerHTML = '<i class="fa-solid fa-pause"></i>';
+        isPlaying = true;
+    } else {
+        bgMusic.pause();
+        musicBtn.innerHTML = '<i class="fa-solid fa-music"></i>';
+        isPlaying = false;
+    }
+});
+</script>
